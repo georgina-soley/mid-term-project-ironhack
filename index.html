@@ -7,56 +7,60 @@
     <title>Circle Mid Project</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
 
    <section id="cabecera">
         <div class="nav">
             <div class="logo">
-                <img src="./images/logos/circle.svg" alt="Circle logotipo">
+               <a href="#"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
             </div>
             <nav class="menu">
                 <ul>
-                    <li id="home"><a>Home</a></li>
-                    <li id="projects"><a>Projects</a></li>
-                    <li id="services"><a>Services</a></li>
+                    <li id="home"><a href="#">Home</a></li>
+                    <li id="projects"><a href="#">Projects</a></li>
+                    <li id="services"><a href="#">Services</a></li>
                 </ul>
             </nav>
-            <div class="btn">
+            <div class="btn-principal">
                 <button>Contact Us</button>
             </div>
         </div>
-        <div class="cabecera">
-            <div class="text">
+        <div class="hero-shot">
+            <div class="hs-text">
                 <h1>Empower Your Business With Stunning Design!</h1>
                 <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-                <div class="btn">
-                    <button class="inicial">Get in touch</button>
-                    <button class="secundario">See our work</button>
+                <div class="hs-txt-btn">
+                    <button class="secundario"><a href="#">See our work</a></button>
+                    <button class="principal"><a href="#">Get in touch</a></button>
                 </div>
             </div>
-            <div class="img">
-                <img src="./images/hero-section/hero-image.png" alt="Hero image boy presentation">
-                <img src="./images/hero-section/card-1.png" alt="Credit Card">
-                <img src="./images/hero-section/card-2.png" alt="Project accpeted">
-            </div>
-            <div class="logos">
-                <img src="./images/logos/airbnb-logo.svg" alt="Airbnb logo">
-                <img src="./images/logos/google-logo.svg" alt="Google logo">
-                <img src="./images/logos/microsoft-logo.svg" alt="Microsoft logo">
-                <img src="./images/logos/fedex-logo.svg" alt="FedEx logo">
-                <img src="./images/logos/amazon-logo.svg" alt="Amazon logo">
+            <div class="hs-img">
+               <img src="./images/hero-section/hero-image.png" alt="Hero image boy presentation" class="guy">
+                <img src="./images/hero-section/card-1.png" alt="Credit Card" class="card-credit">
+                <img src="./images/hero-section/card-2.png" alt="Project accpeted" class="card-project"> 
+                
             </div>
         </div>
    </section>
-   <section id="recent-projects">
+   <section id="clients">
+    <div class="logos">
+        <img src="./images/logos/airbnb-logo.svg" alt="Airbnb logo">
+        <img src="./images/logos/google-logo.svg" alt="Google logo">
+        <img src="./images/logos/microsoft-logo.svg" alt="Microsoft logo">
+        <img src="./images/logos/fedex-logo.svg" alt="FedEx logo">
+        <img src="./images/logos/amazon-logo.svg" alt="Amazon logo">
+    </div>
+   </section>
+   <section id="projects">
     <!-- //card 1 -->
-        <div class="container-projects">
+        
             <h2>Recent Projects</h2>
             <div class="container-cards">
                 <div class="card">
-                    <div class="card-img">
-                        <img src="" alt="">
+                    <div class="card-img-simply">
+                        <!-- <img src="./images/projects-section/1.jpg" alt="Abstract form Simplify"> -->
                     </div>
                     <div class="card-content">
                         <div class="card-text">
@@ -67,12 +71,12 @@
 
                     </div>
                 </div>
-            </div>
+           
         <!-- //card 2 -->
         <div class="container-cards">
             <div class="card">
-                <div class="card-img">
-                    <img src="" alt="">
+                <div class="card-img-dash">
+                    <!-- <img src="./images/projects-section/2.jpg" alt="Abstract form Dashcoin"> -->
                 </div>
                 <div class="card-content">
                     <div class="card-text">
@@ -87,8 +91,8 @@
         <!-- card 3    -->
         <div class="container-cards">
             <div class="card">
-                <div class="card-img">
-                    <img src="" alt="">
+                <div class="card-img-vector">
+                    <!-- <img src="./images/projects-section/3.jpg" alt="Abstract form Vectorify"> -->
                 </div>
                 <div class="card-content">
                     <div class="card-text">
@@ -113,17 +117,17 @@
                 <p>"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
             </div>
             <div class="testimonio-user">
-                <img src="" alt="Kristin Watson user image">
+                <img src="./images/testimonial-section/profile.png" alt="Kristin Watson user image">
                 <div class="user-text">
                     <h4 class="name-user">Kristin Watson</h4>
                     <p class="web-page">Booking.com</p>
                 </div>
             </div>
         </div>
-        <img src="" alt="" class="locator-top-left">
-        <img src="" alt="" class="locator-top-right">
-        <img src="" alt="" class="locator-bottom-left">
-        <img src="" alt="" class="locator-bottom-right">
+        <img src="./images/testimonial-section/memoji-1.png" alt="Emoji lucky" class="locator-top-left">
+        <img src="./images/testimonial-section/memoji-4.png" alt="Emoji celebrating" class="locator-top-right">
+        <img src="./images/testimonial-section/memoji-3.png" alt="Emoji like" class="locator-bottom-left">
+        <img src="./images/testimonial-section/memoji-2.png" alt="Emoji winking" class="locator-bottom-right">
     </div>
    </section>
   <!-- Bloque nuestros servicios con 3 fichas  -->
@@ -131,19 +135,19 @@
     <h2 class="services">Our Services</h2>
     <div class="contenedor-services">
         <div class="card-service">
-            <img src="" alt="Design picto">
+            <img src="./images/services-section/icons/1.svg" alt="Design picto">
             <h3>User Interface Design</h3>
             <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
             <a href="#">Learn More</a>
         </div>
         <div class="card-service">
-            <img src="" alt="User experience picto">
+            <img src="./images/services-section/icons/2.svg" alt="User experience picto">
             <h3>User Experience Design</h3>
             <p>Circle always focuses on delivering the best user experience to your customers.</p>
             <a href="#">Learn More</a>
         </div>
         <div class="card-service">
-            <img src="" alt="User experience picto">
+            <img src="./images/services-section/icons/3.svg" alt="User experience picto">
             <h3>Application Development </h3>
             <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
             <a href="#">Learn More</a>
@@ -156,13 +160,14 @@
     <div class="cta-info">
         <h2>Do you have any questions?</h2>
         <p>Let us help you!</p>
+    <!-- ME FALTA EL INPUT DE NEWSLETTER! -->
     </div>
    </section>
    <!-- footer  -->
    <section id="footer">
     <footer>
         <div class="footer-info">
-            <img src="" alt="circle-logotipo">
+            <img src="./images/logos/circle.svg" alt="circle-logotipo">
             <p class="direction">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
         </div>
         <div class="footer-menu">
