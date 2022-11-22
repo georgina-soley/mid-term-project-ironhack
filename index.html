@@ -14,13 +14,13 @@
    <section id="cabecera">
         <div class="nav">
             <div class="logo">
-               <a href="#"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
+               <a href="#cabecera"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
             </div>
             <nav class="menu">
                 <ul>
-                    <li id="home"><a href="#">Home</a></li>
-                    <li id="projects"><a href="#">Projects</a></li>
-                    <li id="services"><a href="#">Services</a></li>
+                    <li id="home-menu"><a href="#cabecera">Home</a></li>
+                    <li id="projects-menu"><a href="#projects">Projects</a></li>
+                    <li id="services-menu"><a href="#services">Services</a></li>
                 </ul>
             </nav>
             <div class="btn-principal">
@@ -32,8 +32,8 @@
                 <h1>Empower Your Business With Stunning Design!</h1>
                 <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
                 <div class="hs-txt-btn">
-                    <button class="secundario"><a href="#">See our work</a></button>
-                    <button class="principal"><a href="#">Get in touch</a></button>
+                    <a href="#" class="secundario">See our work</a>
+                    <a href="#" class ="principal">Get in touch</a>
                 </div>
             </div>
             <div class="hs-img">
@@ -45,18 +45,26 @@
         </div>
    </section>
    <section id="clients">
-    <div class="logos">
+    <div class="logos-abnb">
         <img src="./images/logos/airbnb-logo.svg" alt="Airbnb logo">
+    </div>
+    <div class="logos-google">
         <img src="./images/logos/google-logo.svg" alt="Google logo">
+    </div>
+    <div class="logos-microsoft">
         <img src="./images/logos/microsoft-logo.svg" alt="Microsoft logo">
+    </div>
+    <div class="logos-fedex">
         <img src="./images/logos/fedex-logo.svg" alt="FedEx logo">
+    </div>
+    <div class="logos-amazon">
         <img src="./images/logos/amazon-logo.svg" alt="Amazon logo">
     </div>
+    
    </section>
-   <section id="projects">
-    <!-- //card 1 -->
-        
-            <h2>Recent Projects</h2>
+   <section id="projects">        
+         <h2>Recent Projects</h2>
+             <!-- //card 1 -->
             <div class="container-cards">
                 <div class="card">
                     <div class="card-img-simply">
@@ -71,51 +79,42 @@
 
                     </div>
                 </div>
-           
-        <!-- //card 2 -->
-        <div class="container-cards">
-            <div class="card">
-                <div class="card-img-dash">
-                    <!-- <img src="./images/projects-section/2.jpg" alt="Abstract form Dashcoin"> -->
-                </div>
-                <div class="card-content">
-                    <div class="card-text">
-                        <h3 class="card-title">Dashcoin</h3>
-                        <p class="card-description">Web Development</p>
-                        <a href="#">Learn More</a>
+                <div class="card">
+                    <div class="card-img-dash">
+                        <!-- <img src="./images/projects-section/2.jpg" alt="Abstract form Dashcoin"> -->
                     </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- card 3    -->
-        <div class="container-cards">
-            <div class="card">
-                <div class="card-img-vector">
-                    <!-- <img src="./images/projects-section/3.jpg" alt="Abstract form Vectorify"> -->
-                </div>
-                <div class="card-content">
-                    <div class="card-text">
-                        <h3 class="card-title">Vectorify</h3>
-                        <p class="card-description">User Experience Design</p>
-                        <a href="#">Learn More</a>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3 class="card-title">Dashcoin</h3>
+                            <p class="card-description">Web Development</p>
+                            <a href="#">Learn More</a>
+                        </div>
+    
                     </div>
-
                 </div>
-            </div>
-        </div>
-
+                <div class="card">
+                    <div class="card-img-vector">
+                        <!-- <img src="./images/projects-section/3.jpg" alt="Abstract form Vectorify"> -->
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3 class="card-title">Vectorify</h3>
+                            <p class="card-description">User Experience Design</p>
+                            <a href="#">Learn More</a>
+                        </div>
+    
+                    </div>
+                </div>
         </div>
    </section>
 
    <!-- Section clients -->
-   <section id="quote-clients">
-       <div>
+   <section id="testimonials">
+       
         <div class="container-testimonio">
             <h2>Hear What Our Clients Have to Say</h2>
-            <div class="testimonio-text">
-                <p>"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
-            </div>
+            <p>"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
+
             <div class="testimonio-user">
                 <img src="./images/testimonial-section/profile.png" alt="Kristin Watson user image">
                 <div class="user-text">
@@ -128,26 +127,29 @@
         <img src="./images/testimonial-section/memoji-4.png" alt="Emoji celebrating" class="locator-top-right">
         <img src="./images/testimonial-section/memoji-3.png" alt="Emoji like" class="locator-bottom-left">
         <img src="./images/testimonial-section/memoji-2.png" alt="Emoji winking" class="locator-bottom-right">
-    </div>
+    
    </section>
   <!-- Bloque nuestros servicios con 3 fichas  -->
    <section id="services">
     <h2 class="services">Our Services</h2>
     <div class="contenedor-services">
         <div class="card-service">
-            <img src="./images/services-section/icons/1.svg" alt="Design picto">
+            <!-- <img src="./images/services-section/icons/1.svg" alt="Design picto"> -->
+            <div class="img-service-interface"></div>
             <h3>User Interface Design</h3>
             <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
             <a href="#">Learn More</a>
         </div>
         <div class="card-service">
-            <img src="./images/services-section/icons/2.svg" alt="User experience picto">
+            <!-- <img src="./images/services-section/icons/2.svg" alt="User experience picto"> -->
+            <div class="img-service-ux"></div>
             <h3>User Experience Design</h3>
             <p>Circle always focuses on delivering the best user experience to your customers.</p>
             <a href="#">Learn More</a>
         </div>
         <div class="card-service">
-            <img src="./images/services-section/icons/3.svg" alt="User experience picto">
+            <!-- <img src="./images/services-section/icons/3.svg" alt="User experience picto"> -->
+            <div class="img-service-dev"></div>
             <h3>Application Development </h3>
             <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
             <a href="#">Learn More</a>
@@ -160,25 +162,30 @@
     <div class="cta-info">
         <h2>Do you have any questions?</h2>
         <p>Let us help you!</p>
+        <div class="contenedor-form">
+         <div class="form-email-contenedor">   
+            <input type="email" placeholder="Enter your email" required id="email-form">
+            <img src="./images/newsletter/icon/mail.svg" alt="mail icon">
+        </div>
+        <button type="submit" class="principal">Suscribe</button>
+        </div>
     <!-- ME FALTA EL INPUT DE NEWSLETTER! -->
     </div>
    </section>
    <!-- footer  -->
    <section id="footer">
-    <footer>
+    <div class="caja-footer">
         <div class="footer-info">
             <img src="./images/logos/circle.svg" alt="circle-logotipo">
-            <p class="direction">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+            <p class="direction">2972 Westheimer Rd. Santa Ana,<br> Illinois 85486</p>
         </div>
         <div class="footer-menu">
-            <ul>
-                <li class="menu-footer"><a>Team</a></li>
-                <li class="menu-footer"><a>Services</a></li>
-                <li class="menu-footer"><a>About Us</a></li>
-                <li class="menu-footer"><a>Press</a></li>
-                <li class="menu-footer"><a>Projects</a></li>
-                <li class="menu-footer"><a>Privacy Policy</a></li>
-            </ul>
+                <a href="#">Team</a>
+                <a href="#">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Press</a>
+                <a href="#">Projects</a>
+                <a href="#">Privacy Policy</a>
         </div>
     </footer>
    </section> 
