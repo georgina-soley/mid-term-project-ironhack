@@ -22,3 +22,12 @@ hoy:
 - Repasaré esa estructura home
 - Creación página contact Us
 - Empezaré con darle style (CSS) a la home.
+
+## Miercoles 23 nov
+
+Ayer acabé con el estilo desktop a falta de algunas modificaciones, hoy:
+
+- Acabar de repasar desktop + responsive
+- Estructura HTML contact Us
+- Empezar estilo de Contact Us
+- Aclararme con la sección proyectos
