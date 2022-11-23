@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+
+/* General Styling CSS */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,26 +20,60 @@
     padding: 0 30px; 
   }
 
-  /* 1ºsección- cabecera + nav */
+  a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  a:hover{
+    cursor: pointer;
+  }
 
-  #cabecera {
-   max-width: 80%;
+  /* Typographies */
+  h1{
+    text-align: left;
+    font-size: 60px;
+    line-height: 1.25em;
+    margin: 20px 0 30px;
+  }
+  h2{
+    font-size: 2.7em;
+    color: #292e47;
+    line-height: 36px;
+    margin: 20px 0px 20px;
+  }
+
+  h3{
+    font-size: 24px;
+    line-height: 115%;
+    font-weight: 500;
+    color: #292e47;
+    margin: 15px 5px 0px;
+  }
+
+
+  /* 1ºsección- cabecera + nav */
+  
+  #cabecera,  #header-cabecera {
+   width: 80%;
    display: flex;
    flex-direction: column;
    justify-content: center;
   }
 
 /* SECCIÓN NAVEGADOR*/
-  .logo{
-    width: 60px;
-    height: 18px;
-  }
-  .nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 70px;
   }
+
+.logo{
+    width: 60px;
+    height: 18px;
+  }
+ 
 
   .menu ul{
     display: flex;
@@ -53,9 +89,6 @@
 
   .menu a{
     color: #6c718b;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 500;
     padding: 20px;
   }
 
@@ -67,7 +100,7 @@
     color: #0082f3;
   }
 
-  .btn-principal button{
+  .btn-principal{
     color: white;
     padding: 15px 30px;
     background-color: #072AC8;
@@ -76,7 +109,7 @@
     border: 0px;
   }
 
-  .btn-principal button:hover{
+  .btn-principal:hover{
     color: white;
     padding: 15px 30px;
     background-color: #292e47;
@@ -84,6 +117,7 @@
     display: inline-block;
     border: 0px;
   }
+
 
 /* hero-shot-section*/
   .hero-shot{
@@ -95,18 +129,13 @@
   }
 
   .hs-text{
-    width: 50%;
+    /* width: 50%; */
     /* display: flex; */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* padding: 7em 2em; */
     max-width:  530px;
   }
-  .hs-text h1{
-    text-align: left;
-    font-size: 4.3em;
-    line-height: 1.25em;
-    margin: 20px 0 30px;
-  }
+
   .hs-text p{
     color: #6b708d;
     font-size: 20px;
@@ -114,11 +143,12 @@
     margin-bottom: 40px;
     width: 85%;
   }
-
+/* Bloque de botones del texto del hero */
   .hs-txt-btn{
     display: flex;
     justify-content:left;
     align-items: baseline ;
+
     /* margin:20px 0 30px */
   }
 
@@ -128,6 +158,7 @@
     font-size: 17px;
     font-weight: 500;
   }
+  /* Este botón .principal serviría poner el mismo estilo que .btn-principal pero no lo invoco/llamo bien */
 
   .principal{
     color: white !important;
@@ -139,6 +170,7 @@
     padding: 15px 30px;
   }
 
+  /* y este podría ser estilo del menu a pero igual tampoco se nombrarlo pues */
   .secundario {
     background: none;
     border: none;
@@ -147,9 +179,9 @@
   .hs-img {
     width: 50%;
     /* background-image: url(./images/hero-section/hero-image.png); */
-    background-position: 0 0;
+    /* background-position: 0 0;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
     position: relative;
     justify-content: center;
     align-items: center;
@@ -161,13 +193,13 @@
     height: fit-content;
   }
   .hs-img-cards{
-    position: relative;
+    /* position: relative;
     align-items: center;
-    display: flex;
+    display: flex; */
   }
 
   .card-credit {
-    width: 22vw;
+    width: 50%;
     position: absolute;
     top: 0;
     left: -19%;
@@ -175,7 +207,7 @@
   }
 
   .card-project{
-    width: 22vw;
+    width: 50%;
     position: absolute;
     bottom: -20%;
     right: -23%;
@@ -192,30 +224,16 @@
 
 
     #projects{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-flow: column wrap; */
     width: 80%;
     margin-top: 200px;
     }
 
     .card-img-vector{
         width: 1fr;
-
     }
 
-  h2{
-        font-size: 2.7em;
-        color: #292e47;
-        line-height: 36px;
-        margin: 20px 0px 20px;
-        
-
-    }
-    
+    /* este container se repite en servicios */
     .container-cards{
-        /* display: flex;
-        flex-wrap: wrap;*/
         display:grid;
         margin-top: 70px;
         grid-auto-columns: 1fr;
@@ -227,15 +245,10 @@
    
     .card {
         background-color: white;
-        /* display: flex;
-        flex-direction:column ;
-        justify-content: space-between; */
         display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 16px;
-        grid-row-gap: 0px;
-        
+        width: 350px;
+        height: 450px;
     }
 
     /* project cards images */
@@ -264,11 +277,6 @@
     }
 
     .card-text h3{
-        font-size: 24px;
-        line-height: 115%;
-        font-weight: 500;
-        color: #292e47;
-        margin: 15px 5px 0px;
         padding: 20px;
     }
 
@@ -287,7 +295,6 @@
         font-weight: 500;
         text-decoration: none;
         padding: 20px;
-
     }
 
 
@@ -320,25 +327,28 @@
         max-width: 400px;
         color: white;
         text-align: center;
-        font-size: 2.85em;
+        font-size: 36px;
         line-height: 150%;
     }
 
     .container-testimonio > p {
      max-width: 560px;
      color: #ffc600;
-     font-size: 2em;
+     font-size: 24px;
      line-height: 160%;
      font-weight: 500;
      text-align: center;
     }
+
     /* User testimonio */
+   /* ---------- La imagen comentar con teacher... si la meto como imagen se me deforma, si la meto como background de un div bien pero pierdo el alt, es buena praxis? */
+
     .testimonio-user{
         display: flex;
         align-items: center;
     }
 
-    .testimonio-user img{
+    .user-img-testimony{
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -405,19 +415,16 @@
         margin-top: 180px;
     }
 
-   
-
-    .contenedor-services {
-        display:grid;
-        /* display: flex; */
-        margin-top: 70px;
-        /* justify-content: space-between; */
-        grid-auto-columns: 1fr;
-        grid-column-gap: 40px;
-        grid-row-gap: 16px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-    }
+    /* si aquí uso la class .card como en proyectos debería tocar el margin del contenido de la card porque se pega al marco */
+    .container-cards-service{
+      display:grid;
+      margin-top: 70px;
+      grid-auto-columns: 1fr;
+      grid-column-gap: 40px;
+      grid-row-gap: 16px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+  }
     .card-service{
         /* max-width: 300px; */
         background-color: white;
@@ -436,6 +443,7 @@
     } */
 
     /* //iconos metidos dentro del background de un div */
+    /* Igual podría hacer 1 class que contenga todo + class independiente para cada uno donde solo se toque el background */
     .img-service-interface {
         width: 5vw;
         height: 5vw;
@@ -476,13 +484,9 @@
     }
 
     /* texto de las cards */
-
+    /* probando con unificar cards .card-text con las de proyecto pero no acaba de cuadrar, las otras son iguales + padding modificado igual a proyecto podría ponerle este estilo + sumarle el padding */
     .card-service h3{
-        font-size: 24px;
-        line-height: 115%;
-        font-weight: 500;
-        color: #292e47;
-        margin: 15px 5px 20px;
+        margin-bottom: 20px;
     }
 
     .card-service p{
@@ -510,6 +514,7 @@
         background-color: #ffc600;
         height: 500px;
         width: 100%;
+        padding-bottom: 20px;
     }
 
     .cta-info {
@@ -588,6 +593,162 @@
     .footer-info p{
         font-size: 17px;
         line-height: 150%;
-        color: #6b708d;
+        color: #6b708d;  
+    }
+    /* Empezamos responsive */
+    /* Pantalla tablet */
+    @media (min-width:768px) and (max-width: 991px){
+      *{
+        margin: none;
+      }
+     
+      h1{
+        text-align: center;
+      }
+      #header-cabecera, #cabecera, #clients, #projects, #testimonials, #services, #CTA,  #footer{
+        width: 100%;
+        margin-top: 40px;
+      }
+      /* #header-cabecera, #cabecera, #clients, #projects, #testimonials, #services, #CTA,  #footer{
+        width: 95%;
+      } */
+      #header-cabecera {
+        margin-top: 10px;
+      }
+
+      .nav{
+        margin-top: 30px;
+      }
+     
+      .menu ul{
+        display: none;
+    
+      }
+
+      .btn-principal{
+        display: none;
+      }
+
+      .hero-shot{
+        /* display: flex; */
+        flex-direction: column;
+        margin-top:20px
+      }
+      .hs-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding-bottom: 30px;
+      }
+
+      .hs-text p{
+        text-align: center;
+      }
+
+      .hs-txt-btn{
+        flex-direction: row-reverse;
+        justify-content: center;
+      }
+
+      .principal{
+        margin-right: 20px;
+        margin-left: 0px;
+      }
+
+      .hs-img{
+        width: 70%;
+      }
+      .guy {
+        width: 100%;
+      }
+
+/* // sección clientes */
+      #clients{
+        /* display: flex;
+        flex-wrap: ;
+        width: 70%;
+        margin-top: 50px; */
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-row-gap:40px;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .logos-amazon{
+        display: none;
+      }
+ /* PROJECT */
+      .container-cards{
+        grid-template-columns: 1fr 1fr;
+        /* //la separación entre proyectos como se controla? */
+        grid-column-gap: 2%; 
+      }
+
+      /* /TESTIMONIALS */
+
+      /* SERVICES */
+
+      .container-cards-service{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .img-service {
+        width: 8vw;
+        height: 8vw;
+      }
+
+      /* cta */
+      #CTA{
+        max-width: 100%;
+        margin-top: 60px;
+        display: flex;
+        width: 1320;
+      }
+      .contenedor-form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      /* footer */
+      #footer{
+       padding-bottom: 50px;
+      }
+      .caja-footer{
+        width: 100%;
+      }
+
+    }
+
+
+    /* Pantalla phone */
+    @media (max-width: 767px){
+
+    }
+
+
+
+    /* CONTACT STYLE */
+
+    #form{
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #form h1{
         
+    }
+
+    .form-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .form-container-pequeño{
+      display: flex;
+      flex-direction: row;
     }

@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="cabecera">
+    <header id="header-cabecera" >
         <div class="nav">
             <div class="logo">
-               <a href="#cabecera"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
+               <a href="index.html"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
             </div>
             <nav class="menu">
                 <ul>
@@ -19,15 +20,32 @@
                     <li id="services-menu"><a href="#services">Services</a></li>
                 </ul>
             </nav>
-            <div class="btn-principal">
-                <button>Contact Us</button>
-            </div>
+                <a href="contact-us.html" class="btn-principal">Contact Us</a>
         </div>
-    </section>
+    </header>
     <section id="form">
         <div class="form-contact">
             <h1>Contact Us</h1>
-            <table></table>
+            <form action="email" id="form-mail">
+               <div class="form-container">
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="formName" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-container">
+                    <div class="form-container form-container-pequeño">
+                        <label for="email">Email</label>
+                        <input type="email" id="emailCount" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-container form-container-pequeño">
+                        <label for="phone">Phone</label>
+                        <input type="number" id="phoneNumber" name="phone" placeholder="Enter your phone">
+                    </div>
+                </div>
+                <div class="form-container">
+                    <label for="message">Message*</label>
+                    <input type="text" id="emailCount" name="email" placeholder="Enter your email">
+                </div>
+            </form>
         </div>
     </section>
     <section id="footer">
@@ -45,5 +63,6 @@
                     <a href="#">Privacy Policy</a>
             </div>
         </div>
+       </section> 
 </body>
 </html>

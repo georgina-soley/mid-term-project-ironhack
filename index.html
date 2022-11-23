@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="index.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
-<body>
-
-   <section id="cabecera">
+ <body>
+    <header id="header-cabecera" >
         <div class="nav">
             <div class="logo">
-               <a href="#cabecera"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
+               <a href="index.html"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
             </div>
             <nav class="menu">
                 <ul>
@@ -23,17 +22,17 @@
                     <li id="services-menu"><a href="#services">Services</a></li>
                 </ul>
             </nav>
-            <div class="btn-principal">
-                <button>Contact Us</button>
-            </div>
+                <a href="contact-us.html" class="btn-principal">Contact Us</a>
         </div>
+    </header>
+    <section id="cabecera">
         <div class="hero-shot">
             <div class="hs-text">
                 <h1>Empower Your Business With Stunning Design!</h1>
                 <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
                 <div class="hs-txt-btn">
                     <a href="#" class="secundario">See our work</a>
-                    <a href="#" class ="principal">Get in touch</a>
+                    <a href="contact-us.html" class ="principal ">Get in touch</a>
                 </div>
             </div>
             <div class="hs-img">
@@ -67,7 +66,7 @@
              <!-- //card 1 -->
             <div class="container-cards">
                 <div class="card">
-                    <div class="card-img-simply">
+                    <div class="card-img-simply" title="Abstract form Simplify">
                         <!-- <img src="./images/projects-section/1.jpg" alt="Abstract form Simplify"> -->
                     </div>
                     <div class="card-content">
@@ -116,7 +115,8 @@
             <p>"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
 
             <div class="testimonio-user">
-                <img src="./images/testimonial-section/profile.png" alt="Kristin Watson user image">
+                <!-- <img src="./images/testimonial-section/profile.png" alt="Kristin Watson user image"> -->
+                <div class="user-img-testimony"></div>
                 <div class="user-text">
                     <h4 class="name-user">Kristin Watson</h4>
                     <p class="web-page">Booking.com</p>
@@ -132,24 +132,24 @@
   <!-- Bloque nuestros servicios con 3 fichas  -->
    <section id="services">
     <h2 class="services">Our Services</h2>
-    <div class="contenedor-services">
+    <div class=" container-cards-service">
         <div class="card-service">
             <!-- <img src="./images/services-section/icons/1.svg" alt="Design picto"> -->
-            <div class="img-service-interface"></div>
+            <div class="img-service-interface img-service"></div>
             <h3>User Interface Design</h3>
             <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
             <a href="#">Learn More</a>
         </div>
         <div class="card-service">
             <!-- <img src="./images/services-section/icons/2.svg" alt="User experience picto"> -->
-            <div class="img-service-ux"></div>
+            <div class="img-service-ux img-service"></div>
             <h3>User Experience Design</h3>
             <p>Circle always focuses on delivering the best user experience to your customers.</p>
             <a href="#">Learn More</a>
         </div>
         <div class="card-service">
             <!-- <img src="./images/services-section/icons/3.svg" alt="User experience picto"> -->
-            <div class="img-service-dev"></div>
+            <div class="img-service-dev img-service"></div>
             <h3>Application Development </h3>
             <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
             <a href="#">Learn More</a>
