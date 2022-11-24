@@ -31,3 +31,12 @@ Ayer acabé con el estilo desktop a falta de algunas modificaciones, hoy:
 - Estructura HTML contact Us
 - Empezar estilo de Contact Us
 - Aclararme con la sección proyectos
+
+## Jueves 24 nov
+
+Ayer repasé desktop + responsive iPad y hice html y parte del css de las pags Contact Us y la pag base de Proyecto
+hoy:
+
+- Acabar repasar CSS Contact Us & Proyecto (+ responsives)
+- Menú hamburger
+- Javascript (sobre todo esto para tener apoyo)
