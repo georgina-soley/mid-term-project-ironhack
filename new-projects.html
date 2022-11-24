@@ -29,7 +29,7 @@
         </div>
     </header>
     <!-- sección para el proyecto del que habla la pagina -->
-    <section class="main-project">
+    <section class="main-project" id="project-page">
         <div class="cont-about-project">
             <h1>Name of project</h1>
             <div class="project-info">
@@ -39,12 +39,13 @@
                     <p class="data">0/0/00</p>
                 </div>
             </div>
-            <div class="project-image">
+            <div class="container-image">
                 <img src="./images/projects-section/1.jpg" alt="Simplify Abstract">
+                <img src="./images/projects-section/1.jpg" class="blur" alt="Simplify Abstract">
                 
             </div>
             <div class="project-description">
-                <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus.</p> <br>
+                <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus.</p> 
                 <p>Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices. Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
             </div>
         </div>
@@ -56,7 +57,7 @@
     <section id="projects">        
         <h2>Recent Projects</h2>
             <!-- //card 1 -->
-           <div class="container-cards">
+           <div class="container-cards" id="cardsBox">
                <div class="card">
                    <div class="card-img-simply" title="Abstract form Simplify">
                        <!-- <img src="./images/projects-section/1.jpg" alt="Abstract form Simplify"> -->
@@ -99,7 +100,6 @@
        </div>
   </section>
   
-  
     <!-- sección CTA + footer igual que en home -->
     <section id="CTA">
         <div class="cta-info">
@@ -132,5 +132,7 @@
             </div>
         </div>
        </section> 
+       <script src="./index.js"></script>
+       <script src="./scripts/projectInformation.js"></script>
 </body>
 </html>

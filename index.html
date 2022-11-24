@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Mid Project</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
  <body>
+    <!-- //burger modulo de prueba -->
+    
     <header id="header-cabecera" >
         <div class="nav">
             <div class="logo">
@@ -22,6 +23,11 @@
                     <li id="services-menu"><a href="#services">Services</a></li>
                 </ul>                
             </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <button class="hamburger-menu">
                 <i class="fa-solid fa-bars menu"></i>
                 <i class="fa-solid fa-ellipsis-vertical cerrar"></i>
@@ -69,7 +75,7 @@
    <section id="projects">        
          <h2>Recent Projects</h2>
              <!-- //card 1 -->
-            <div class="container-cards">
+            <div class="container-cards" id="cardsBox">
                 <div class="card">
                     <div class="card-img-simply" title="Abstract form Simplify">
                         <!-- <img src="./images/projects-section/1.jpg" alt="Abstract form Simplify"> -->
@@ -194,5 +200,6 @@
         </div>
     </div>
    </section> 
+   <script src="./index.js"></script>
 </body>
 </html>

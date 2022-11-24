@@ -255,15 +255,15 @@
    .card {
        background-color: white;
        display: grid;
-       grid-template-rows: repeat(2, 1fr);
+       grid-template-rows: repeat(1fr 3fr);
        /* esto lo pusimos con diego y bien... pero luego queda demasiado estrecho puede que tenga que ver con el responsive */
        max-width: 350px;
-       max-height: 450px;
+       min-height: 450px;
    }
  
    /* project cards images */
  
-   .card-img-simply{
+   .card-img-0{
        background-image: url("./images/projects-section/1.jpg");
        background-position: 50% 50%;
        background-size:cover;
@@ -271,14 +271,14 @@
        height: 240px;
    }
  
-   .card-img-dash{
+   .card-img-1{
        background-image: url("./images/projects-section/2.jpg");
        background-position: 50% 50%;
        background-size:cover;
        background-repeat: no-repeat;
        height: 240px;
    }
-   .card-img-vector{
+   .card-img-2{
        background-image: url("./images/projects-section/3.jpg");
        background-position: 50% 50%;
        background-size:cover;
@@ -641,7 +641,7 @@
        margin-top: 30px;
      }
    
-     .hamburger-menu{
+     /* .hamburger-menu{
       display: flex;
       z-index: 1;
       padding: 4px 20px 0 0;
@@ -653,8 +653,20 @@
     }
     .hamburger-menu > .cerrar{
       display: none;
-    }
+    } */
+    .bar{
+      display: flex;
+      flex-direction: column;
+      height: 4px;
+      background-color: #333333;
+      width: 24px;
+      border-radius: 3px;
+      margin: 3px;
+     }
 
+     .menu{
+      display: none;
+     }
     
  
      .btn-principal{
@@ -1045,6 +1057,11 @@
 
    /* //project page */
 
+   .cont-about-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
    .main-project{
     width: 80%;
     margin-top: 70px;
@@ -1071,7 +1088,7 @@
 
 
    /* //esto no esta bien  */
-   .project-image{
+   /* .project-image{
     width: 80vw;
     max-height: 600px;
     filter: blur(200);
@@ -1079,15 +1096,44 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-   }
-   .project-image img{
+   } */
+   /* .project-image img{
     width: 80vw;
     filter: blur(40px) opacity(10%);
+   } */
+
+   .container-image{
+    width: 80vw;
+    height: 600px;
+    position: relative;
    }
 
+   .container-image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+   }
+   .blur {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(40px) opacity(50%);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+   }
+   .project-description{
+      margin-top: 80px;
+   }
    .project-description p{
     font-size: 20px;
     line-height: 30px;
-    margin-top: 50px;
     text-align: justify;
+    margin-top: 20px;
    }
+
+
+   /* //burger menu */
+
+   
