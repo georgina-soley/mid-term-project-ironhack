@@ -11,31 +11,36 @@
  <body>
     <!-- //burger modulo de prueba -->
     
-    <header id="header-cabecera" >
-        <div class="nav">
-            <div class="logo">
-               <a href="index.html"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
-            </div>
-            <nav class="menu">
-                <ul>
-                    <li id="home-menu"><a href="#cabecera">Home</a></li>
-                    <li id="projects-menu"><a href="#projects">Projects</a></li>
-                    <li id="services-menu"><a href="#services">Services</a></li>
-                </ul>                
-            </nav>
+    <!-- <header id="header-cabecera" >
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            </ul>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
+            </div>   
+        </nav> -->
+        <header id="header-cabecera" >
+            <div class="nav">
+                <div class="logo">
+                   <a href="index.html"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li id="home-menu"><a href="#cabecera">Home</a></li>
+                        <li id="projects-menu"><a href="#projects">Projects</a></li>
+                        <li id="services-menu"><a href="#services">Services</a></li>
+                    </ul>                
+                </nav>
+    
+                    <a href="contact-us.html" class="btn-principal">Contact Us</a>
             </div>
-            <button class="hamburger-menu">
-                <i class="fa-solid fa-bars menu"></i>
-                <i class="fa-solid fa-ellipsis-vertical cerrar"></i>
-            </button>    
-
-                <a href="contact-us.html" class="btn-principal">Contact Us</a>
-        </div>
-    </header>
+        </header>
     <section id="cabecera">
         <div class="hero-shot">
             <div class="hs-text">
@@ -84,7 +89,7 @@
                         <div class="card-text">
                             <h3 class="card-title">Simplify</h3>
                             <p class="card-description">UI Design & App Development</p>
-                            <a href="#">Learn More</a>
+                            <a href="new-projects.html">Learn More</a>
                         </div>
 
                     </div>
@@ -97,7 +102,7 @@
                         <div class="card-text">
                             <h3 class="card-title">Dashcoin</h3>
                             <p class="card-description">Web Development</p>
-                            <a href="#">Learn More</a>
+                            <a href="new-projects.html">Learn More</a>
                         </div>
     
                     </div>
@@ -110,7 +115,7 @@
                         <div class="card-text">
                             <h3 class="card-title">Vectorify</h3>
                             <p class="card-description">User Experience Design</p>
-                            <a href="#">Learn More</a>
+                            <a href="new-projects.html">Learn More</a>
                         </div>
     
                     </div>
@@ -178,7 +183,7 @@
             <input type="email" placeholder="Enter your email" required id="email-form">
             <img src="./images/newsletter/icon/mail.svg" alt="mail icon">
         </div>
-        <button type="submit" class="principal">Suscribe</button>
+        <button type="submit" class="principal" id="btn-cta">Suscribe</button>
         </div>
     <!-- ME FALTA EL INPUT DE NEWSLETTER! -->
     </div>
@@ -201,5 +206,6 @@
     </div>
    </section> 
    <script src="./index.js"></script>
+   <script src="./scripts/hamburgerMenu.js"></script>
 </body>
 </html>
