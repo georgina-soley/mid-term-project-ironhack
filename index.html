@@ -1,211 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Mid Project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-</head>
- <body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- //burger modulo de prueba -->
-    
-    <!-- <header id="header-cabecera" >
-        <nav class="navbar">
-            <a href="index.html" class="logo"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>   
-        </nav> -->
-        <header id="header-cabecera" >
-            <div class="nav">
-                <div class="logo">
-                   <a href="index.html"><img src="./images/logos/circle.svg" alt="Circle logotipo"></a>
-                </div>
-                <nav class="menu">
-                    <ul>
-                        <li id="home-menu"><a href="#cabecera">Home</a></li>
-                        <li id="projects-menu"><a href="#projects">Projects</a></li>
-                        <li id="services-menu"><a href="#services">Services</a></li>
-                    </ul>                
-                </nav>
-    
-                    <a href="contact-us.html" class="btn-principal">Contact Us</a>
-            </div>
-        </header>
+
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo"
+          ><img src="./images/logos/circle.svg" alt="Circle logotipo"
+        /></a>
+        <div class="nav-mask">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="hide-on-mobile">
+          <a href="contact-us.html" class="btn-principal">Contact Us</a>
+        </div>
+      </nav>
+    </header>
     <section id="cabecera">
-        <div class="hero-shot">
-            <div class="hs-text">
-                <h1>Empower Your Business With Stunning Design!</h1>
-                <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-                <div class="hs-txt-btn">
-                    <a href="#projects" class="secundario">See our work</a>
-                    <a href="contact-us.html" class ="principal ">Get in touch</a>
-                </div>
+      <div class="hero-shot">
+        <div class="hs-text">
+          <h1>Empower Your Business With Stunning Design!</h1>
+          <p>
+            Circle is a digital design and development studio. We design and
+            develop astonishing websites and mobile apps.
+          </p>
+          <div class="hs-txt-btn">
+            <a href="#projects" class="secundario">See our work</a>
+            <a href="contact-us.html" class="principal">Get in touch</a>
+          </div>
+        </div>
+        <div class="hs-img">
+          <img
+            src="./images/hero-section/hero-image.png"
+            alt="Hero image boy presentation"
+            class="guy"
+          />
+          <img
+            src="./images/hero-section/card-1.png"
+            alt="Credit Card"
+            class="card-credit"
+          />
+          <img
+            src="./images/hero-section/card-2.png"
+            alt="Project accpeted"
+            class="card-project"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="clients">
+      <div class="logos-abnb">
+        <img src="./images/logos/airbnb-logo.svg" alt="Airbnb logo" />
+      </div>
+      <div class="logos-google">
+        <img src="./images/logos/google-logo.svg" alt="Google logo" />
+      </div>
+      <div class="logos-microsoft">
+        <img src="./images/logos/microsoft-logo.svg" alt="Microsoft logo" />
+      </div>
+      <div class="logos-fedex">
+        <img src="./images/logos/fedex-logo.svg" alt="FedEx logo" />
+      </div>
+      <div class="logos-amazon">
+        <img src="./images/logos/amazon-logo.svg" alt="Amazon logo" />
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Recent Projects</h2>
+      <!-- //card 1 -->
+      <div class="container-cards" id="cardsBox">
+        <div class="card">
+          <!-- // SI PONGO title dentro del div sirve como alt de img -->
+          <div class="card-img-simply" title="Abstract form Simplify"></div>
+          <div class="card-content">
+            <div class="card-text">
+              <h3 class="card-title">Simplify</h3>
+              <p class="card-description">UI Design & App Development</p>
+              <a href="new-projects.html">Learn More</a>
             </div>
-            <div class="hs-img">
-               <img src="./images/hero-section/hero-image.png" alt="Hero image boy presentation" class="guy">
-                <img src="./images/hero-section/card-1.png" alt="Credit Card" class="card-credit">
-                <img src="./images/hero-section/card-2.png" alt="Project accpeted" class="card-project"> 
-                
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-dash" title="Abstract form Dashcoin"></div>
+          <div class="card-content">
+            <div class="card-text">
+              <h3 class="card-title">Dashcoin</h3>
+              <p class="card-description">Web Development</p>
+              <a href="new-projects.html">Learn More</a>
             </div>
+          </div>
         </div>
-   </section>
-   <section id="clients">
-    <div class="logos-abnb">
-        <img src="./images/logos/airbnb-logo.svg" alt="Airbnb logo">
-    </div>
-    <div class="logos-google">
-        <img src="./images/logos/google-logo.svg" alt="Google logo">
-    </div>
-    <div class="logos-microsoft">
-        <img src="./images/logos/microsoft-logo.svg" alt="Microsoft logo">
-    </div>
-    <div class="logos-fedex">
-        <img src="./images/logos/fedex-logo.svg" alt="FedEx logo">
-    </div>
-    <div class="logos-amazon">
-        <img src="./images/logos/amazon-logo.svg" alt="Amazon logo">
-    </div>
-    
-   </section>
-   <section id="projects">        
-         <h2>Recent Projects</h2>
-             <!-- //card 1 -->
-            <div class="container-cards" id="cardsBox">
-                <div class="card">
-                    <div class="card-img-simply" title="Abstract form Simplify">
-                        <!-- <img src="./images/projects-section/1.jpg" alt="Abstract form Simplify"> -->
-                    </div>
-                    <div class="card-content">
-                        <div class="card-text">
-                            <h3 class="card-title">Simplify</h3>
-                            <p class="card-description">UI Design & App Development</p>
-                            <a href="new-projects.html">Learn More</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-dash">
-                        <!-- <img src="./images/projects-section/2.jpg" alt="Abstract form Dashcoin"> -->
-                    </div>
-                    <div class="card-content">
-                        <div class="card-text">
-                            <h3 class="card-title">Dashcoin</h3>
-                            <p class="card-description">Web Development</p>
-                            <a href="new-projects.html">Learn More</a>
-                        </div>
-    
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-vector">
-                        <!-- <img src="./images/projects-section/3.jpg" alt="Abstract form Vectorify"> -->
-                    </div>
-                    <div class="card-content">
-                        <div class="card-text">
-                            <h3 class="card-title">Vectorify</h3>
-                            <p class="card-description">User Experience Design</p>
-                            <a href="new-projects.html">Learn More</a>
-                        </div>
-    
-                    </div>
-                </div>
-        </div>
-   </section>
-
-   <!-- Section clients -->
-   <section id="testimonials">
-       
-        <div class="container-testimonio">
-            <h2>Hear What Our Clients Have to Say</h2>
-            <p>"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
-
-            <div class="testimonio-user">
-                <!-- <img src="./images/testimonial-section/profile.png" alt="Kristin Watson user image"> -->
-                <div class="user-img-testimony"></div>
-                <div class="user-text">
-                    <h4 class="name-user">Kristin Watson</h4>
-                    <p class="web-page">Booking.com</p>
-                </div>
+        <div class="card">
+          <div class="card-img-vector" title="Abstract form Vector"></div>
+          <div class="card-content">
+            <div class="card-text">
+              <h3 class="card-title">Vectorify</h3>
+              <p class="card-description">User Experience Design</p>
+              <a href="new-projects.html">Learn More</a>
             </div>
+          </div>
         </div>
-        <img src="./images/testimonial-section/memoji-1.png" alt="Emoji lucky" class="locator-top-left">
-        <img src="./images/testimonial-section/memoji-4.png" alt="Emoji celebrating" class="locator-top-right">
-        <img src="./images/testimonial-section/memoji-3.png" alt="Emoji like" class="locator-bottom-left">
-        <img src="./images/testimonial-section/memoji-2.png" alt="Emoji winking" class="locator-bottom-right">
-    
-   </section>
-  <!-- Bloque nuestros servicios con 3 fichas  -->
-   <section id="services">
-    <h2 class="services">Our Services</h2>
-    <div class=" container-cards-service">
-        <div class="card-service">
-            <!-- <img src="./images/services-section/icons/1.svg" alt="Design picto"> -->
-            <div class="img-service-interface img-service"></div>
-            <h3>User Interface Design</h3>
-            <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="card-service">
-            <!-- <img src="./images/services-section/icons/2.svg" alt="User experience picto"> -->
-            <div class="img-service-ux img-service"></div>
-            <h3>User Experience Design</h3>
-            <p>Circle always focuses on delivering the best user experience to your customers.</p>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="card-service">
-            <!-- <img src="./images/services-section/icons/3.svg" alt="User experience picto"> -->
-            <div class="img-service-dev img-service"></div>
-            <h3>Application Development </h3>
-            <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-            <a href="#">Learn More</a>
-        </div>
-    </div>
-   </section>
+      </div>
+    </section>
 
-   <!-- CTA bloque amarillo , el form es form o como? -->
-   <section id="CTA">
-    <div class="cta-info">
+    <!-- Section clients -->
+    <section id="testimonials">
+      <div class="container-testimonio">
+        <h2>Hear What Our Clients Have to Say</h2>
+        <p>
+          "Circle helped us through every stage of our startup. We really
+          enjoyed working with you."
+        </p>
+
+        <div class="testimonio-user">
+          <div class="user-img-testimony"></div>
+          <div class="user-text">
+            <h4 class="name-user">Kristin Watson</h4>
+            <p class="web-page">Booking.com</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/testimonial-section/memoji-1.png"
+        alt="Emoji lucky"
+        class="locator-top-left"
+      />
+      <img
+        src="./images/testimonial-section/memoji-4.png"
+        alt="Emoji celebrating"
+        class="locator-top-right"
+      />
+      <img
+        src="./images/testimonial-section/memoji-3.png"
+        alt="Emoji like"
+        class="locator-bottom-left"
+      />
+      <img
+        src="./images/testimonial-section/memoji-2.png"
+        alt="Emoji winking"
+        class="locator-bottom-right"
+      />
+    </section>
+    <!-- Bloque nuestros servicios con 3 fichas  -->
+    <section id="services">
+      <h2 class="services">Our Services</h2>
+      <div class="container-cards-service">
+        <div class="card-service">
+          <!-- <img src="./images/services-section/icons/1.svg" alt="Design picto"> -->
+          <div class="img-service-interface img-service"></div>
+          <h3>User Interface Design</h3>
+          <p>
+            Circle provides you with a stunning user interface design that is
+            accessible to everyone.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="card-service">
+          <!-- <img src="./images/services-section/icons/2.svg" alt="User experience picto"> -->
+          <div class="img-service-ux img-service"></div>
+          <h3>User Experience Design</h3>
+          <p>
+            Circle always focuses on delivering the best user experience to your
+            customers.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="card-service">
+          <!-- <img src="./images/services-section/icons/3.svg" alt="User experience picto"> -->
+          <div class="img-service-dev img-service"></div>
+          <h3>Application Development</h3>
+          <p>
+            We develop high-quality mobile and web applications using the latest
+            technology stack.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA bloque amarillo , el form es form o como? -->
+    <section id="CTA">
+      <div class="cta-info">
         <h2>Do you have any questions?</h2>
         <p>Let us help you!</p>
         <div class="contenedor-form">
-         <div class="form-email-contenedor">   
-            <input type="email" placeholder="Enter your email" required id="email-form">
-            <img src="./images/newsletter/icon/mail.svg" alt="mail icon">
+          <div class="form-email-contenedor">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              required
+              id="email-form"
+            />
+            <img src="./images/newsletter/icon/mail.svg" alt="mail icon" />
+          </div>
+          <button type="submit" class="principal" id="btn-cta">Suscribe</button>
         </div>
-        <button type="submit" class="principal" id="btn-cta">Suscribe</button>
-        </div>
-    <!-- ME FALTA EL INPUT DE NEWSLETTER! -->
-    </div>
-   </section>
-   <!-- footer  -->
-   <section id="footer">
-    <div class="caja-footer">
+        <!-- ME FALTA EL INPUT DE NEWSLETTER! -->
+      </div>
+    </section>
+    <!-- footer  -->
+    <section id="footer">
+      <div class="caja-footer">
         <div class="footer-info">
-            <img src="./images/logos/circle.svg" alt="circle-logotipo">
-            <p class="direction">2972 Westheimer Rd. Santa Ana,<br> Illinois 85486</p>
+          <img src="./images/logos/circle.svg" alt="circle-logotipo" />
+          <p class="direction">
+            2972 Westheimer Rd. Santa Ana,<br />
+            Illinois 85486
+          </p>
         </div>
         <div class="footer-menu">
-                <a href="#">Team</a>
-                <a href="#">Services</a>
-                <a href="#">About Us</a>
-                <a href="#">Press</a>
-                <a href="#">Projects</a>
-                <a href="#">Privacy Policy</a>
+          <a href="#">Team</a>
+          <a href="#">Services</a>
+          <a href="#">About Us</a>
+          <a href="#">Press</a>
+          <a href="#">Projects</a>
+          <a href="#">Privacy Policy</a>
         </div>
-    </div>
-   </section> 
-   <script src="./index.js"></script>
-   <script src="./scripts/hamburgerMenu.js"></script>
-</body>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+    <script src="./scripts/hamburgerMenu.js"></script>
+  </body>
 </html>

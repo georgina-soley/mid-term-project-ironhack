@@ -18,7 +18,7 @@ const apiJasonProject = () => {
                         <div class="card-text">
                             <h3 class="card-title">${post.title}</h3>
                             <p class="card-description">${post.body}</p>
-                            <a href="#">Learn More</a>
+                            <a href="new-projects.html">Learn More</a>
                         </div>
                     </div>
                 </div>`
